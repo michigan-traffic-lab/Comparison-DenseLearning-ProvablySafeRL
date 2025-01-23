@@ -1,0 +1,5 @@
+addpath("/home/linxuan/Formal/provable/code/reachability/")
+addpath("/home/linxuan/Formal/provable/code/reachability/benchmarks")
+addpath("/home/linxuan/Formal/provable/code/CORA")
+installCORA()
+commonRoad()

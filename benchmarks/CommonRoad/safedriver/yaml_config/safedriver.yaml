@@ -1,0 +1,9 @@
+pytorch_model_path_list: 
+  - "./safedriver/models/safedriver_best_ckpt_finetuned_commonroad.pt"
+criticality_thresh: 0.9
+RSS_flag: False # use RSS or not
+lateral_and_longitudinal_speed_dynamic: real # real (from current state and last state) or complex (from safedriver dynamic)
+lateral_speed_vehicle_coordinate_dynamic: real # real or complex
+cal_speed_mode: next # next (2 * dx/dt - v, next step) or current (dx/dt, current step)
+action_transfer_priority: simple # fit position or yaw_rate first (transfer steering angle to yaw rate) or simple (*k as yaw rate)
+relax_yaw_rate_clip: False # relax yaw rate restriction to 0.4 or not

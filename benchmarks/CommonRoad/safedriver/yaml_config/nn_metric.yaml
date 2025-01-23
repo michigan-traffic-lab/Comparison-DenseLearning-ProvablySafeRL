@@ -1,0 +1,8 @@
+loss_func: "BCE"
+model: 'bn_mlp_sigmoid'
+DSL_mode: "baseline"
+layer_num: 1
+num_workers: 0
+ckpt: "./safedriver/models/neuralmetric_best_ckpt_finetuned_v2.pt"
+obs_normalize: True
+input_dim: 27

@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<initialization>
+  <vehicle id="veh1">
+    <type>IDM</type>
+    <route>route_0</route>
+    <lane>0to1_0</lane>
+    <pos>420</pos>
+    <speed>15</speed>
+    <acc>0</acc>
+    <orientation>0</orientation>
+  </vehicle>
+  <vehicle id="veh2">
+    <type>IDM</type>
+    <route>route_0</route>
+    <lane>0to1_1</lane>
+    <pos>440</pos>
+    <speed>15</speed>
+    <acc>0</acc>
+    <orientation>0</orientation>
+  </vehicle>
+  <vehicle id="veh3">
+    <type>IDM</type>
+    <route>route_0</route>
+    <lane>0to1_2</lane>
+    <pos>420</pos>
+    <speed>15</speed>
+    <acc>0</acc>
+    <orientation>0</orientation>
+  </vehicle>
+</initialization>
