@@ -1,0 +1,11 @@
+cliprange: 0.2
+ent_coef: 0.0
+env_wrapper: [{training.ReplanningWrapper:{planning_horizon: 0.8, planner_dt: 0.4}}, training.UnsafeWrapper]
+gamma: 0.99
+lam: 0.95
+learning_rate: 0.0005
+n_steps: 1024
+nminibatches: 1
+noptepochs: 10
+normalize: true
+policy: MlpPolicy
