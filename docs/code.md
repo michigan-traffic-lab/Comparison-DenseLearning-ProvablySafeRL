@@ -3,6 +3,45 @@ This project is developed based on the open-source code for the provably safe re
 
 ## Code Structure
 The code structure is shown in the following diagram.
+```
+Comparison-DenseLearning-ProvablySafeRL/
+|_benchmarks/
+  |_CommonRoad/ # CommonRoad environment
+    |_agent/ # source code and model parameters for the base model
+    |_analysis_tools/ # analysis tools
+    |_auxiliary/ # auxiliary functions
+    |_gym_commonroad_sumo/
+      |_gym_commonroad_sumo/ # CommonRoad-SUMO interface
+        |_action/ # action space and vehicle models
+        |_NDE_RL_NADE/ # NADE environment
+        |_observation/ # observation space
+        |_reward/ # reward function for default CommonRoad benchmarks
+        |_simulation/ # CommonRoad-SUMO simulation environment
+        |_utils/ # utility functions
+        |___init__.py
+        |_commonroad_sumo_env.py # GYM environment for CommonRoad benchmarks
+        |_draw_reachable_set.py # visualization function
+        |_file_reader.py # read CommonRoad scenario files
+        |_file_writer.py # write CommonRoad scenario files
+        |_gym_commonroad_nade.py # GYM environment for NADE
+      |_setup.py
+    |_reachability/ # reachable set and calculation methods
+    |_safedriver/ 
+      |_models/ # models for SafeDriver
+      |_yaml_config/ # configuration files for SafeDriver
+      |_SafeDriver.py # SafeDriver implementation
+    |_source_data/ # data for NADE
+    |_spot_predictor/ # SPOT predictor
+    |_src/ # source code for the provably safe reinforcement learning model
+    |_sumo_config/ # SUMO configuration files
+  |_deployment_nade.py # main script for evaluation with NADE
+  |_deployment.py # main script for evaluation with CommonRoad benchmarks
+  |_NADE_result_analysis.py # script for analyzing the evaluation results
+|__docs/ # documentation
+|__LICENSE # license of this repository
+|__README.md # guidance for running the code
+|__requirements.txt
+```
 
 ## Changes
 We have made the following changes compared to the original code to ensure a fair comparison between the provably safe reinforcement learning model and the Dense Learning algorithm.

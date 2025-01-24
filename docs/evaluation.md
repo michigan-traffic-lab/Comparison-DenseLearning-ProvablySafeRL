@@ -24,10 +24,11 @@ The file structure of the testing results is shown below:
 
 ```
 your-output-path/
-|__crash/
-|__saved_data/
-|__statistical_results/
-|__weight0.npy
+|__crash/ # data for crash scenarios
+|__saved_data/ # detailed information for planners within each scenario
+|__statistical_results/ # statistical results for this experiment
+|__tested_and_safe/ # data for safe scenarios
+|__weight0.npy # weight of each testing episode
 ```
 
 ## Testing results
@@ -44,8 +45,6 @@ Since it usually takes thousands of CPU*hours to get a reliable crash rate, we p
 | Base model             | $5.69 \times 10^{−3}$  |
 | Base model with the safety shield (i.e., provably safe reinforcement learning model) | $4.36 \times 10^{−4}$  |
 | Base model with SafeDriver   | $2.22 \times 10^{−4}$  |
-
-
 
 
 <- Last Page: [Code Introduction](code.md)

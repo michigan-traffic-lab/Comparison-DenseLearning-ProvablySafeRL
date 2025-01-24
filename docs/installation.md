@@ -13,8 +13,6 @@ To install the packages required for this repository, execute the command provid
 ```bash
 conda install pip==24.0
 pip install -r requirements.txt
-cd safe-control-gym
-pip install -e .
 cd ../benchmarks/CommonRoad/gym_commonroad_sumo
 pip install -e .
 ```

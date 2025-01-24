@@ -1,4 +1,5 @@
 import argparse
+import os
 from analysis_tools.analysis import analysis
 from analysis_tools.clean_up_results_folder import clean
 from analysis_tools.visualization import visualize
@@ -24,4 +25,5 @@ if args.analysis_flag:
 if args.clean_flag:
     clean(root_folder)
 if args.visualize_flag:
+    os.makedirs(os.path.join(root_folder, "saved_data", "videos"), exist_ok=True)
     visualize(root_folder)
