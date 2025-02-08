@@ -38,7 +38,23 @@ python NADE_result_analysis.py --root_folder <path-to-your-result-folder>
 ```
 Statistical results are saved in `results/statistical_results`.
 
-Since it usually takes thousands of CPU*hours to get a reliable crash rate, we provided the evaluation results [here](). As shown in the folloiwing table, the base model with SafeDriver demonstrated the lowest crash rate in NDE at $2.22 \times 10^{−4}$. This represents a 96.1% reduction compared to the base model and a 49.1% decrease compared to the base model with a safety shield.
+Since it usually takes thousands of CPU*hours to get a reliable crash rate, we provided the evaluation results [here](https://zenodo.org/records/14837947). The data folder has the following structure:
+
+```
+Data_Comparison-DenseLearning-ProvablySafeRL/
+|_evaluation_basemodel/ # evaluation results for the base model
+  |_crash/ # data for crash scenarios
+  |_leave_network/ # data for offroad scenarios
+  |_saved_data/ # detailed information for planners within each scenario
+  |_statistical_results/ # statistical results for this experiment
+  |_tested_and_safe/ # data for safe scenarios
+  |_weight0.npy # weight of each testing episode
+  |_...
+|_evaluation_basemodel_safetyshield/ # evaluation results for the base model with the safety shield, which has the same structure as evaluation_basemodel
+|_evaluation_basemodel_safedriver/ # evaluation results for the base model with SafeDriver, which has the same structure as evaluation_basemodel
+```
+
+As shown in the folloiwing table, the base model with SafeDriver demonstrated the lowest crash rate in NDE at $2.22 \times 10^{−4}$. This represents a 96.1% reduction compared to the base model and a 49.1% decrease compared to the base model with a safety shield.
 
 | AV planning module                  | Crash Rate in NDE       |
 |------------------------|------------------------|

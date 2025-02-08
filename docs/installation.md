@@ -16,6 +16,7 @@ pip install -r requirements.txt
 cd ../benchmarks/CommonRoad/gym_commonroad_sumo
 pip install -e .
 ```
+* Note: Please set the global environment variable `SUMO_HOME` to the path of the SUMO installation directory which can be found by `whereis sumo`. For example, `export SUMO_HOME=/home/user_name/anaconda3/envs/venv/bin/sumo`.
 
 ## 3. Install MATLAB and matlabengine
 A MATLAB not higher than R2023a, not lower than R2020b, is needed to run the SPOT codes. The corresponding matlabengine version `{your version}` can be found at https://pypi.org/project/matlabengine.

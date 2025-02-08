@@ -37,13 +37,13 @@ Comparison-DenseLearning-ProvablySafeRL/
   |_deployment_nade.py # main script for evaluation with NADE
   |_deployment.py # main script for evaluation with CommonRoad benchmarks
   |_NADE_result_analysis.py # script for analyzing the evaluation results
-|__docs/ # documentation
-|__LICENSE # license of this repository
-|__README.md # guidance for running the code
-|__requirements.txt
+|_docs/ # documentation
+|_LICENSE # license of this repository
+|_README.md # guidance for running the code
+|_requirements.txt
 ```
 
-## Changes
+## Changes to the Original Code
 We have made the following changes compared to the original code to ensure a fair comparison between the provably safe reinforcement learning model and the Dense Learning algorithm.
 
 - **Evaluation environment**
